@@ -7,23 +7,15 @@
 	</head>
 	<body>
 		<img id="img" style="width:90%;position:fixed;top:0;left:0;"src="test.png" onclick="testfunc()">
-		<button id="button" style="cursor:zoom-in;position:fixed;top:10%;left:10%;width:5%;height:10%;background:red;border:none;font-size:0;" onclick="makeInvisible('button')"></button>
+		<button id="button" style="cursor:zoom-in;position:fixed;top:10%;left:10%;width:5%;height:10%;background:red;border:none;font-size:0;" onclick="makeNotExist('img')"></button>
 <!-- JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT   -->
 		<script>
-			function makeInvisible(elementId) {
-				document.getElementById(elementId).style.visibility = "hidden";
-			};
-			function makeVisible(elementId) {
-				document.getElementById(elementId).style.visibility = "visible";
-			};
+			makeInvisible("button");
 			function makeNotExist(elementId) {
 				document.getElementById(elementId).style.display = "none";
 			};
 			function makeExist(elementId) {
 				document.getElementById(elementId).style.display = "initial";
-			};
-			function testfunc() {
-				document.getElementById("img").src = "test2.png";
 			};
 		</script>
 <!-- JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT   -->
