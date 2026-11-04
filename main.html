@@ -1,15 +1,31 @@
+<!-- make button invisible, but clickable -->
+
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>POINT AND CLICK</title>
 	</head>
 	<body>
-		<img style="width:1600px;height:900px;position:fixed;top:0;left:0;"src="test.png" id="test" onclick="testfunc()">
-		<button style="cursor:zoom-in;position:fixed;top:0;left:0;width:100px;height:100px;background:red;border:none;font-size:0;" onclick="alert('BUTT')"></button>
+		<img id="img" style="width:90%;position:fixed;top:0;left:0;"src="test.png" onclick="testfunc()">
+		<button id="button" style="cursor:zoom-in;position:fixed;top:10%;left:10%;width:5%;height:10%;background:red;border:none;font-size:0;" onclick="makeInvisible('button')"></button>
+<!-- JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT   -->
 		<script>
+			function makeInvisible(elementId) {
+				document.getElementById(elementId).style.visibility = "hidden";
+			};
+			function makeVisible(elementId) {
+				document.getElementById(elementId).style.visibility = "visible";
+			};
+			function makeNotExist(elementId) {
+				document.getElementById(elementId).style.display = "none";
+			};
+			function makeExist(elementId) {
+				document.getElementById(elementId).style.display = "initial";
+			};
 			function testfunc() {
-				document.getElementById("test").src = "test2.png";
+				document.getElementById("img").src = "test2.png";
 			};
 		</script>
+<!-- JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT  JAVASCRIPT   -->
 	</body>
 </html>
