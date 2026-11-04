@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>POINT AND CLICK</title>
+	</head>
+	<body>
+		<img style="width:1600px;height:900px;position:fixed;top:0;left:0;"src="test.png" id="test" onclick="testfunc()">
+		<button style="cursor:zoom-in;position:fixed;top:0;left:0;width:100px;height:100px;background:red;border:none;font-size:0;" onclick="alert('BUTT')"></button>
+		<script>
+			function testfunc() {
+				document.getElementById("test").src = "test2.png";
+			};
+		</script>
+	</body>
+</html>
